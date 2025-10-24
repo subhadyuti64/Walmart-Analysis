@@ -61,12 +61,27 @@
 ### 🎯 Goal
 To predict **`Weekly_Sales`** using macroeconomic and environmental indicators.
 
-### ⚙️ Model Setup
-```python
-from sklearn.linear_model import LinearRegression
-X = data[['Fuel_Price', 'CPI', 'Temperature', 'Unemployment']]
-y = data['Weekly_Sales']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-model = LinearRegression()
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
+## 📊 Results
+
+| **Metric** | **Value** |
+|:------------|-----------:|
+| **R² Score** | 0.0175 |
+| **Intercept** | 1,789,909.78 |
+
+### 🔹 Main Coefficients
+
+| **Feature** | **Coefficient** |
+|:-------------|----------------:|
+| Fuel_Price | -22,242.58 |
+| CPI | -1,632.23 |
+| Temperature | -686.16 |
+| Unemployment | -43,596.97 |
+
+---
+
+## 🧩 Interpretation
+
+- **R² = 0.0175** → Model explains approximately **1.7% of the variation** in weekly sales → indicates **weak predictive power**.  
+- **Negative coefficients** show slight inverse relationships — higher fuel prices or unemployment lead to lower weekly sales.  
+- The model is **underfitted**, as it only uses a few macroeconomic variables and ignores store-specific or seasonal factors.
+
