@@ -1,3 +1,7 @@
+# 🛒 Walmart Sales Data Analysis & Prediction
+
+This project performs **exploratory data analysis (EDA)** and builds a simple **linear regression model** on Walmart’s historical weekly sales data.  
+It aims to uncover **sales patterns, store performance trends, and the effect of holidays** on weekly revenue.
 
 ---
 
