@@ -85,3 +85,5 @@ To predict **`Weekly_Sales`** using macroeconomic and environmental indicators.
 - **Negative coefficients** show slight inverse relationships — higher fuel prices or unemployment lead to lower weekly sales.  
 - The model is **underfitted**, as it only uses a few macroeconomic variables and ignores store-specific or seasonal factors.
 
+
+Author : Subhadyuti Rath
